@@ -13,13 +13,23 @@ nav {
     padding: 10px 90px;
     box-sizing: border-box;
     background: #383d52;
-    border-bottom: 1px solid #fff;
 }
 
 
+.nav-about{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:250px;
+    height: 100%;
+    background: #383d52;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+}
+
 nav .logo{
     padding: 22px 20px;
-    height: 32px;
     float: left;
     font-size:24px;
     font-weight: bold;
@@ -36,26 +46,90 @@ nav .logo{
 
 nav ul {
     list-style: none;
-    float: right;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     display: flex;
+    margin-top: -63px;
 }
 
 nav ul li a{
-    line-height: 80px;
+    margin-top: 50px;
     color: #fff;
-    padding: 12px 30px;
+    padding: 15px 30px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+    transition: all 0.5s ease;
+    
+}
+
+
+#a1{
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
+}
+
+#a2{
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
+}
+
+#a3{
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
 }
 
 #a4{
-    background:#47c35a;
-    border-radius: 10px;
+    color: white;
+    float:right;
+    margin-top: -34px;
+    font-size: 25px;
+    background-color: rgba(62,62,62,0.8);
+    padding: 10px;
+    border-radius: 15px;
+}
 
+
+/*
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+*/
+.homebtn{
+    position: fixed;
+    text-decoration: none;
+    font-family: courier;
+    font-weight: bold;
+    font-size: 17px;
+    background: #47c35a;
+    color: #fff;
+  /*  margin-left: 933px; */
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    top: 25px;
+    left: 30px;
+}
+
+
+#imglogo{
+    width: 89px;
+    margin-left: 30px;
+    display: block;
+    margin-top: 0;
+    
 }
 
 nav ul li a:hover{ 
@@ -64,16 +138,23 @@ nav ul li a:hover{
     transition-delay: 0.2s;
 }
 
-
 .container-box{
     width: 500px;
-    background-color: #fff;
-    box-shadow: 0 0 40px 0 #777;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
+    background-color: #383d52;
+    /*box-shadow: 0 0 70px 0 #777;*/ 
+    transition: 0.3s;
+    position:inherit;
     border-radius: 10px;
+    margin-top: 187px;
+    margin-left: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.container
+
+.container-box:hover{
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.8);
 }
 
 .container-box-about{
@@ -99,12 +180,6 @@ nav ul li a:hover{
     border-bottom-right-radius: 10px;
 }
 
-#leftmenuid{
-    font-family: courier;
-    color: white;
-    text-align: center;
-}
-
 form{
     margin: 35px;
 }
@@ -119,6 +194,8 @@ form{
     border: 1px solid #777;
     border-radius: 14px;
     outline: none;
+    background-color: rgb(62,62,62);
+    color: white;
 }
 
 .input-number{
@@ -146,7 +223,7 @@ form{
     color: #fff;
     margin-top: 18px;
     padding: 10px;
-    background-color: #47c35a;
+    background-color: rgb(44, 44, 44);
     font-size: 12px;
     border: none;
     cursor: pointer;
@@ -159,6 +236,8 @@ div form section {
     text-align: center;
     text-transform: uppercase;    
 }
+
+/*
 
 .body-message {
     text-align: center;
@@ -173,18 +252,125 @@ div form section {
     border: solid rebeccapurple;
     border-width: 5px;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
+
+*/
 
 .footer-text{
     font-family: courier, oblique;
     font-size: 15px;
     text-align: center;
     font-weight: bold;
-    margin-top:8.6cm;
+    margin-top:23.7cm;
 }
 
 #container-box-p{
     font-family: courier;
     text-align: center;
 }
+
+/* CARD ABOUT SYSTEM : START */
+
+.container-card{
+    display: flex;
+    margin: 320px 0 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgb(252, 247, 225);
+    width: 300px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top:10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    height: 250px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.person-1{
+    background-image: url("./images/CEO.jpg");
+}
+
+.person-2{
+    background-image: url("./images/img_avatar.png");
+}
+
+.person-3{
+    background-image: url("./images/img_avatar2.png");
+}
+
+.card h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: verdana;
+    
+}
+
+.card p{
+    text-align: center;
+    font-size: 20px;
+    font-family: arial;
+}
+
+.card a{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+    border-radius: 25px;
+    
+}
+
+.card:hover{
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 1s ease;
+    font-family: courier;
+}
+
+/* END */
+
+
+/* BACKGROUND INDEX IMAGE */
+
+
+/* LOGO NAVBAR */
+
+.logonav{
+    width: 100px;
+    height: 100px;
+    margin-top: -10px;
+}
+
+#lid{
+    float: right;
+    list-style: none;
+    margin-top: -20px;
+    
+}
+
+.extrabg{
+
+    margin-top: 100px;
+    width: 1919px;
+    height: 869px;
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+}
+
+
+/* FOOTER NAVBAR */
 
