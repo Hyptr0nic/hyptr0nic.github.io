@@ -1,47 +1,94 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moz - New tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png">
+</head>
 
+<body class="body-class">
 
-    <head>
-        <title>qErex - Home</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="description" content="Video Platform">
-        <meta name="author" content="Anghel Alexandru"> 
-        <link rel="icon" type="image/x-icon" href="/images/icon.png.ico">
-    </head>
+<!-- NAVBAR - SEARCH [START] -->
 
-    <body style="background-color:rgba(27,27,27);">
-        <nav>
-    <!--          <a href="index.html" class="logo">qErex</a> -->
-            <a href="index.html">
-                <img src="/images/sonhjbnj.jpg" class="logonav" alt="Logo">
-            </a>
-            <ul>
-                <li><a href="account.html" class="listing" id="a1">Account</a></li>
-                <li><a href="about.html" class="listing" id="a2">About</a></li>
-                <li><a href="contact.html" class="listing" id="a3">Contact</a></li>
+    <nav class="navbar">
+        
+        <div class="background-nav">
+            
+            <div class="background-img-nav">
+                <img src="/images/background-nav2.jpg" class="nav-img">
+            </div>
+
+        </div>
+    </nav>
+    
+    <div class="container">
+        <form action="https://www.google.com/search" method="get" target="_blank" class="search-bar">
+            <input type="text" title="Type something" placeholder="Search with Moz" name="q">
+            <button type="submit" title="Search"><img src="/images/search.png"></button>
+        </form>
+    </div>
+
+<!-- NAVBAR - SEARCH [END] -->
+
+    <div class="navigation-tool">
+
+        <div class="nav-list">
+            <ul class="nav-ul">
+                <li><a href="https://bit.ly/3T3lw6v" target="_blank" class="li-a1 a1">Weather</a></li>
+                <li><a href="https://www.skysports.com/" target="_blank" class="li-a2 a2">Sports</a></li>
+                <li><a href="https://www.news.com.au/world/north-america" target="_blank" class="li-a3 a3">North America</a></li>
+                <li><a href="https://www.nbcnews.com/health/coronavirus" target="_blank" class="li-a4 a4">Coronavirus</a></li>
                 
-            <!--    <li><a href="info.html" id="a4">Info</a></li> -->                
             </ul>
-            <h1 id="a4">Loading...</h1>    
-        </nav>
-
-       <!-- <a href="index.html" class="homebtn">Home</a> -->
 
 
-        <div class="body-message">
-        <!--   <h1 id="hindextab">Momentan pagina Web este in mentenanta!</h1> -->
         </div>
+    </div>
 
-        <div class="extrabgnav">
-            <img src="/images/exbg.jpg" class="extrabg" alt="extrabg">
+    <section class="section-class">
+
+    <!-- CARD VIDEO 1 -->
+        <div class="container-card">
+            <!--<img src="/images/card2.jpg" id="imgcard">-->
+            <video autoplay loop controls muted class="video-card">
+                <source src="/images/city.mp4" type="video/mp4">
+            </video>  
+
+            <div class="quotes">     
+                <a href="https://pixabay.com" title="Go to Pixabay">Incearca acum Pixabay</a>
+            </div>
         </div>
+    <!-- END -->
 
-    </body>
 
-    <script src="/main.js"></script>
+    <!-- CARD IMG 2 -->    
+        <div class="container-card2">
+            <img src="/news/news-card2.jpg" alt="News about NATO meeting">
+
+            <div class="description-1">
+                <a href="https://www.nato.int/cps/en/natohq/news_208401.htm" title="Go to news">Secretarul general al NATO participă la reuniunea miniștrilor apărării B9</a>
+            </div>
+        </div>
+    <!-- END -->
+
+
+    <!-- CARD IMG 3 -->
+        <div class="container-card3">
+            <img src="/news/news-card3-1.jpg" alt="News about Rolls-Royce">
+
+            <div class="description-2">
+                <a href="https://www.motorbiscuit.com/why-rolls-royce-cars-spooky-names-ghost-phantom-wraith/" title="Go to news">De ce mașinile Rolls-Royce au nume înfricoșătoare? — Ghost, Phantom și Wraith</a>
+            </div>
+        </div>
+    <!-- END -->
+    </section>
+
+</body>
+
+    <script src="main.js">
+    </script>
 
 </html>
